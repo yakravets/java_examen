@@ -12,7 +12,7 @@ public class Country {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String short_name;
+    private String shortName;
 
     @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<City> cities;
@@ -20,9 +20,9 @@ public class Country {
     @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Airport> airports;
 
-    public Country(String name, String short_name) {
+    public Country(String name, String shortName) {
         this.name = name;
-        this.short_name = short_name;
+        this.shortName = shortName;
         cities = new ArrayList<>();
     }
 
@@ -54,11 +54,11 @@ public class Country {
     }
 
     public String getShortName() {
-        return short_name;
+        return shortName;
     }
 
-    public void setShortName(String short_name) {
-        this.short_name = short_name;
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
     }
 
     public List<Airport> getAirports() {
