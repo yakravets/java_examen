@@ -53,11 +53,11 @@ public class Country {
         this.cities = cities;
     }
 
-    public String getShort_name() {
+    public String getShortName() {
         return short_name;
     }
 
-    public void setShort_name(String short_name) {
+    public void setShortName(String short_name) {
         this.short_name = short_name;
     }
 
