@@ -26,4 +26,10 @@ public class TestCountry {
         country.setId(1);
         Assert.assertTrue(country.getId() == 1);
     }
+
+    @Test
+    public void TestConstructorWithParameters(){
+        Country country = new Country("test", "test");
+        Assert.assertFalse(country == null);
+    }
 }
