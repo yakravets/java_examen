@@ -1,39 +1,22 @@
-import models.Post;
-import models.User;
-import services.PostService;
-import services.UserService;
-
-import java.util.List;
+import models.Country;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import utils.HibernateSessionFactoryUtil;
 
 public class Main {
+
     public static void main(String[] args) {
 
-        UserService userService = new UserService();
-        PostService postService = new PostService();
+        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        Country country = new Country("Ukraine", "UA");
+        Transaction tx1 = session.beginTransaction();
+        session.save(country);
+        tx1.commit();
 
-        User masha = new User("Masha","Petrova", "masha@petrova.com");
-        userService.saveUser(masha);
+        Country country1 = session.get(Country.class, 1);
+        System.out.println(country1);
+        session.close();
 
-        System.out.println(masha);
-
-        Post post1 = new Post(masha, "My first record", "Hello world!");
-        System.out.println(post1);
-        Post post2 = new Post(masha, "My second record", "Hello my friend!");
-        System.out.println(post2);
-
-        postService.savePost(post1);
-        postService.savePost(post2);
-
-        System.out.println("User " + masha.getName() + " posts:");
-
-        List<Post> posts = (List<Post>) postService.findPostUser(masha);
-
-        for (Post savedPost:
-             posts) {
-
-            System.out.println(savedPost);
-
-        }
-
+        System.out.println("OK");
     }
 }
