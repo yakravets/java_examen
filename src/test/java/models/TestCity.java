@@ -1,7 +1,5 @@
-package jacoco;
+package models;
 
-import models.City;
-import models.Country;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,12 +1,12 @@
 package repository;
 
-public class flightstatsAPI {
+public class FlightstatsAPI {
 
     private String url;
     private String appId;
     private String appKey;
 
-    public flightstatsAPI() {
+    public FlightstatsAPI() {
         this.url = "https://api.flightstats.com/";
         this.appId = "";
         this.appKey = "";
@@ -22,5 +22,13 @@ public class flightstatsAPI {
 
     public String getAppKey() {
         return appKey;
+    }
+
+    public void setAppId(String appId) {
+        this.appId = appId;
+    }
+
+    public void setAppKey(String appKey) {
+        this.appKey = appKey;
     }
 }

@@ -1,4 +1,4 @@
 package repository;
 
-public final class weatherRepositoryAPI extends flightstatsAPI{
+public final class weatherRepositoryAPI extends FlightstatsAPI {
 }

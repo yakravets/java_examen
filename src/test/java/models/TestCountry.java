@@ -1,7 +1,6 @@
-package jacoco;
+package models;
 
 import org.junit.Assert;
-import models.Country;
 import org.junit.Test;
 
 public class TestCountry {

@@ -1,5 +1,5 @@
 package repository;
 
-public final class countryRepositoryAPI extends flightstatsAPI {
+public final class countryRepositoryAPI extends FlightstatsAPI {
 
 }

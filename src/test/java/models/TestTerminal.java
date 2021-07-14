@@ -1,7 +1,5 @@
-package jacoco;
+package models;
 
-import models.Airport;
-import models.Terminal;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,7 +9,7 @@ public class TestTerminal {
     public void TestName() {
         Terminal terminal = new Terminal();
         terminal.setName("Test");
-        Assert.assertEquals(terminal.getName(), "Test");
+        Assert.assertEquals("Test", terminal.getName());
     }
 
     @Test

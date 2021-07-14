@@ -1,10 +1,6 @@
-package jacoco;
+package models;
 
-import models.Airport;
-import models.Country;
-import models.Terminal;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
