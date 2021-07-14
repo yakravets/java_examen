@@ -11,14 +11,14 @@ public class TestTermial {
     public void TestName() {
         Terminal terminal = new Terminal();
         terminal.setName("Test");
-        Assert.assertTrue(terminal.getName().equals("Test"));
+        Assert.assertEquals(terminal.getName(), "Test");
     }
 
     @Test
     public void TestId() {
         Terminal terminal = new Terminal();
         terminal.setId(5);
-        Assert.assertTrue(terminal.getId() == 5);
+        Assert.assertEquals(terminal.getId(), 5);
     }
 
     @Test

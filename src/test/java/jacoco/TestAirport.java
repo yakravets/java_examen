@@ -16,30 +16,28 @@ public class TestAirport {
     public void TestId(){
         Airport airport = new Airport();
         airport.setId(10);
-        Assert.assertTrue(airport.getId() == 10);
+        Assert.assertEquals(airport.getId(), 10);
     }
 
     @Test
     public void TestName() {
-
         Airport airport = new Airport();
         airport.setName("Boryspil");
-        Assert.assertTrue(airport.getName().equals("Boryspil"));
-
+        Assert.assertEquals(airport.getName(), "Boryspil");
     }
 
     @Test
     public void TestIataCode() {
         Airport airport = new Airport();
         airport.setIataCode("BSP");
-        Assert.assertTrue(airport.getIataCode().equals("BSP"));
+        Assert.assertEquals(airport.getIataCode(), "BSP");
     }
 
     @Test
     public void TestIcaoCode() {
         Airport airport = new Airport();
         airport.setIcaoCode("EEUE");
-        Assert.assertTrue(airport.getIcaoCode().equals("EEUE"));
+        Assert.assertEquals(airport.getIcaoCode(), "EEUE");
     }
 
     @Test
@@ -47,42 +45,39 @@ public class TestAirport {
         Airport airport = new Airport();
         Country country = new Country();
         airport.setCountry(country);
-        Assert.assertTrue(airport.getCountry().equals(country));
+        Assert.assertEquals(airport.getCountry(), country);
     }
 
     @Test
     public void TestLatitudeLongitude() {
         Airport airport = new Airport();
         airport.setLatitude(10.45);
-        Assert.assertTrue(airport.getLatitude() == 10.45);
+        Assert.assertEquals(airport.getLatitude(), 10.45, 0);
         airport.setLongitude(12.15);
-        Assert.assertTrue(airport.getLongitude() == 12.15);
+        Assert.assertEquals(airport.getLongitude(), 12.15, 0);
     }
 
     @Test
     public void TestStatus() {
         Airport airport = new Airport();
         airport.setStatus("OK");
-        Assert.assertTrue(airport.getStatus().equals("OK"));
+        Assert.assertEquals(airport.getStatus(), "OK");
     }
 
     @Test
     public void TestTerminalsList() {
-
         Airport airport = new Airport();
         List<Terminal> terminals = new ArrayList<Terminal>();
         airport.setTerminals(terminals);
-
-        Assert.assertTrue(airport.getTerminals().size() == 0);
+        Assert.assertEquals(airport.getTerminals().size(), 0);
 
         Terminal terminal = new Terminal("A", airport);
         terminals.add(terminal);
-        Assert.assertTrue(airport.getTerminals().size() == 1);
-
+        Assert.assertEquals(airport.getTerminals().size(), 1);
     }
 
     @Test
-    public void TestConstructorWithparameters() {
+    public void TestConstructorWithParameters() {
         Country country = new Country();
         Airport airport = new Airport("TEST", "ICAO", "IATA", "OK", 1.5, 2.5, country);
         Assert.assertNotNull(airport);

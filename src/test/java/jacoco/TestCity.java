@@ -12,22 +12,21 @@ public class TestCity {
     {
         City city = new City();
         city.setId(1);
-        Assert.assertTrue(city.getId() == 1);
+        Assert.assertEquals(city.getId(), 1);
     }
 
     @Test
     public void CheckName(){
         City city = new City();
         city.setName("Rivne");
-        Assert.assertTrue(city.getName().equals("Rivne"));
+        Assert.assertEquals(city.getName(), "Rivne");
     }
 
     @Test
     public void CheckCountry(){
         Country country = new Country("Test","TEST");
-
         City city = new City();
         city.setCountry(country);
-        Assert.assertTrue(city.getCountry().equals(country));
+        Assert.assertNotNull(city.getCountry());
     }
 }
