@@ -5,7 +5,7 @@ import models.Terminal;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestTermial {
+public class TestTerminal {
 
     @Test
     public void TestName() {
@@ -18,7 +18,7 @@ public class TestTermial {
     public void TestId() {
         Terminal terminal = new Terminal();
         terminal.setId(5);
-        Assert.assertEquals(terminal.getId(), 5);
+        Assert.assertEquals(5, terminal.getId());
     }
 
     @Test

@@ -16,28 +16,28 @@ public class TestAirport {
     public void TestId(){
         Airport airport = new Airport();
         airport.setId(10);
-        Assert.assertEquals(airport.getId(), 10);
+        Assert.assertEquals(10, airport.getId());
     }
 
     @Test
     public void TestName() {
         Airport airport = new Airport();
         airport.setName("Boryspil");
-        Assert.assertEquals(airport.getName(), "Boryspil");
+        Assert.assertEquals("Boryspil", airport.getName());
     }
 
     @Test
     public void TestIataCode() {
         Airport airport = new Airport();
         airport.setIataCode("BSP");
-        Assert.assertEquals(airport.getIataCode(), "BSP");
+        Assert.assertEquals("BSP", airport.getIataCode());
     }
 
     @Test
     public void TestIcaoCode() {
         Airport airport = new Airport();
         airport.setIcaoCode("EEUE");
-        Assert.assertEquals(airport.getIcaoCode(), "EEUE");
+        Assert.assertEquals("EEUE", airport.getIcaoCode());
     }
 
     @Test
@@ -52,16 +52,16 @@ public class TestAirport {
     public void TestLatitudeLongitude() {
         Airport airport = new Airport();
         airport.setLatitude(10.45);
-        Assert.assertEquals(airport.getLatitude(), 10.45, 0);
+        Assert.assertEquals(10.45, airport.getLatitude(), 0);
         airport.setLongitude(12.15);
-        Assert.assertEquals(airport.getLongitude(), 12.15, 0);
+        Assert.assertEquals(12.15, airport.getLongitude(), 0);
     }
 
     @Test
     public void TestStatus() {
         Airport airport = new Airport();
         airport.setStatus("OK");
-        Assert.assertEquals(airport.getStatus(), "OK");
+        Assert.assertEquals("OK", airport.getStatus());
     }
 
     @Test
@@ -69,11 +69,11 @@ public class TestAirport {
         Airport airport = new Airport();
         List<Terminal> terminals = new ArrayList<Terminal>();
         airport.setTerminals(terminals);
-        Assert.assertEquals(airport.getTerminals().size(), 0);
+        Assert.assertEquals(0, airport.getTerminals().size());
 
         Terminal terminal = new Terminal("A", airport);
         terminals.add(terminal);
-        Assert.assertEquals(airport.getTerminals().size(), 1);
+        Assert.assertEquals(1, airport.getTerminals().size());
     }
 
     @Test

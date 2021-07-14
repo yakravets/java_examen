@@ -12,14 +12,14 @@ public class TestCity {
     {
         City city = new City();
         city.setId(1);
-        Assert.assertEquals(city.getId(), 1);
+        Assert.assertEquals(1, city.getId());
     }
 
     @Test
     public void CheckName(){
         City city = new City();
         city.setName("Rivne");
-        Assert.assertEquals(city.getName(), "Rivne");
+        Assert.assertEquals("Rivne", city.getName());
     }
 
     @Test
