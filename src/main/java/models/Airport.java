@@ -12,8 +12,8 @@ public class Airport {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String icao_code;
-    private String iata_code;
+    private String icaoCode;
+    private String iataCode;
     private String status;
     private double longitude;
     private double latitude;
@@ -25,10 +25,10 @@ public class Airport {
     @OneToMany(mappedBy = "airport", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Terminal> terminals;
 
-    public Airport(String name, String icao_code, String iata_code, String status, double longitude, double latitude, Country country) {
+    public Airport(String name, String icaoCode, String iataCode, String status, double longitude, double latitude, Country country) {
         this.name = name;
-        this.icao_code = icao_code;
-        this.iata_code = iata_code;
+        this.icaoCode = icaoCode;
+        this.iataCode = iataCode;
         this.status = status;
         this.longitude = longitude;
         this.latitude = latitude;
@@ -56,20 +56,20 @@ public class Airport {
         this.name = name;
     }
 
-    public String getIcao_code() {
-        return icao_code;
+    public String getIcaoCode() {
+        return icaoCode;
     }
 
-    public void setIcao_code(String icao_code) {
-        this.icao_code = icao_code;
+    public void setIcaoCode(String icaoCode) {
+        this.icaoCode = icaoCode;
     }
 
-    public String getIata_code() {
-        return iata_code;
+    public String getIataCode() {
+        return iataCode;
     }
 
-    public void setIata_code(String iata_code) {
-        this.iata_code = iata_code;
+    public void setIataCode(String iataCode) {
+        this.iataCode = iataCode;
     }
 
     public String getStatus() {
