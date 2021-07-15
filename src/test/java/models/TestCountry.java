@@ -3,6 +3,8 @@ package models;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class TestCountry {
 
     @Test
@@ -30,5 +32,25 @@ public class TestCountry {
     public void TestConstructorWithParameters(){
         Country country = new Country("test", "test");
         Assert.assertNotNull(country);
+    }
+
+    @Test
+    public void TestCitiesList() {
+        Country country = new Country();
+        Assert.assertNull(country.getCities());
+
+        ArrayList<City> cities = new ArrayList<>();
+        country.setCities(cities);
+        Assert.assertNotNull(country.getCities());
+    }
+
+    @Test
+    public void TestAirportsList() {
+        Country country = new Country();
+        Assert.assertNull(country.getAirports());
+
+        ArrayList<Airport> airports = new ArrayList<>();
+        country.setAirports(airports);
+        Assert.assertNotNull(country.getAirports());
     }
 }
