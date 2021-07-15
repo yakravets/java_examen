@@ -11,14 +11,19 @@ import org.hibernate.cfg.Configuration;
 public class HibernateSessionFactoryUtil {
     private static SessionFactory sessionFactory;
 
+    public static Configuration getConfiguration() {
+        return configuration;
+    }
+
+    private static Configuration configuration;
+
     private HibernateSessionFactoryUtil() {}
 
-    public static SessionFactory getSessionFactory() {
+    public static SessionFactory getSessionFactory(String configFilename) {
         if (sessionFactory == null) {
             try {
-
-                Configuration configuration = new Configuration().configure("hibernate-pg.cfg.xml");
-                RegisterClasses(configuration);
+                configuration = new Configuration().configure(configFilename);
+                registerClasses(configuration);
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
                 sessionFactory = configuration.buildSessionFactory(builder.build());
 
@@ -29,7 +34,7 @@ public class HibernateSessionFactoryUtil {
         return sessionFactory;
     }
 
-    public static void RegisterClasses(Configuration configuration)
+    public static void registerClasses(Configuration configuration)
     {
         configuration.addAnnotatedClass(Airport.class);
         configuration.addAnnotatedClass(City.class);
