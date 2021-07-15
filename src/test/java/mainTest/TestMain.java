@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import utils.HibernateSessionFactoryUtil;
 
-public class Main {
+public class TestMain {
 
     @Test
     public void TestRegisterClasses() {
