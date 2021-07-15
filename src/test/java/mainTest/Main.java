@@ -1,6 +1,5 @@
-package MainTest;
+package mainTest;
 
-import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.junit.Assert;
 import org.junit.Test;
