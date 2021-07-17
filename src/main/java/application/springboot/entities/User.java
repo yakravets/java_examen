@@ -1,5 +1,7 @@
 package application.springboot.entities;
 
+import org.hibernate.annotations.ColumnDefault;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -16,14 +18,16 @@ public class User {
     private String password;
     private Date dataRegistration;
     private boolean emailConfirmed;
+
+    @ColumnDefault(value="false")
     private boolean active;
+    @ColumnDefault(value="false")
     private boolean blocked;
 
     public User() {
     }
 
-    public User(int id, String firstName, String lastName, String email, String password, Date dataRegistration, boolean emailConfirmed, boolean active, boolean blocked) {
-        this.id = id;
+    public User(String firstName, String lastName, String email, String password, Date dataRegistration, boolean emailConfirmed, boolean active, boolean blocked) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

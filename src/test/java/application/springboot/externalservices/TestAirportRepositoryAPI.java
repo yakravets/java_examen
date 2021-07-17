@@ -1,4 +1,4 @@
-package application.springboot.externalServices;
+package application.springboot.externalservices;
 
 import org.junit.Assert;
 import org.junit.Test;

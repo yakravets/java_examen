@@ -37,7 +37,7 @@ public class DatabaseLoader implements CommandLineRunner {
 
         if(this.userRoleRepository.count()==0)
         {
-            this.userRoleRepository.save(new UserRole("Administrator", Access.All, "*", admin));
+            this.userRoleRepository.save(new UserRole("Administrator", Access.ALL, "*", admin));
         }
     }
 }

@@ -1,4 +1,4 @@
-package application.springboot.externalServices;
+package application.springboot.externalservices;
 
 public final class SheduleRepositoryAPI extends FlightstatsAPI {
 }

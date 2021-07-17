@@ -66,7 +66,7 @@ public class TestAirport {
     @Test
     public void TestTerminalsList() {
         Airport airport = new Airport();
-        List<Terminal> terminals = new ArrayList<Terminal>();
+        List<Terminal> terminals = new ArrayList<>();
         airport.setTerminals(terminals);
         Assert.assertEquals(0, airport.getTerminals().size());
 

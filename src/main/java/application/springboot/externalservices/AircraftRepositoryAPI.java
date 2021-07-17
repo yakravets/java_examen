@@ -1,4 +1,4 @@
-package application.springboot.externalServices;
+package application.springboot.externalservices;
 
 public class AircraftRepositoryAPI extends FlightstatsAPI {
 }
