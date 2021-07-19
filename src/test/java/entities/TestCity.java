@@ -24,16 +24,9 @@ public class TestCity {
 
     @Test
     public void CheckCountry(){
-        Country country = new Country("Test","TEST");
+        Country country = new Country();
         City city = new City();
         city.setCountry(country);
         Assert.assertNotNull(city.getCountry());
-    }
-
-    @Test
-    public void TestConstructorWithParameters() {
-        Country country = new Country();
-        City city = new City(country, "TEST");
-        Assert.assertNotNull(city);
     }
 }

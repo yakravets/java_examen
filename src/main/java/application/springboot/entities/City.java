@@ -18,11 +18,6 @@ public class City {
     public City() {
     }
 
-    public City(Country country, String name) {
-        this.country = country;
-        this.name = name;
-    }
-
     public int getId() {
         return id;
     }

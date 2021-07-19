@@ -32,28 +32,22 @@ public class TestCountry {
     }
 
     @Test
-    public void TestConstructorWithParameters(){
-        Country country = new Country("test", "test");
-        Assert.assertNotNull(country);
-    }
-
-    @Test
     public void TestCitiesList() {
         Country country = new Country();
-        Assert.assertNull(country.getCities());
+        Assert.assertNotNull(country.getCities());
 
         ArrayList<City> cities = new ArrayList<>();
         country.setCities(cities);
-        Assert.assertNotNull(country.getCities());
+        Assert.assertEquals(cities, country.getCities());
     }
 
     @Test
     public void TestAirportsList() {
         Country country = new Country();
-        Assert.assertNull(country.getAirports());
+        Assert.assertNotNull(country.getAirports());
 
         ArrayList<Airport> airports = new ArrayList<>();
         country.setAirports(airports);
-        Assert.assertNotNull(country.getAirports());
+        Assert.assertEquals(airports, country.getAirports());
     }
 }

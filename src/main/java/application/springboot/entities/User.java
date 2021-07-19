@@ -27,17 +27,6 @@ public class User {
     public User() {
     }
 
-    public User(String firstName, String lastName, String email, String password, Date dataRegistration, boolean emailConfirmed, boolean active, boolean blocked) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.password = password;
-        this.dataRegistration = dataRegistration;
-        this.emailConfirmed = emailConfirmed;
-        this.active = active;
-        this.blocked = blocked;
-    }
-
     public int getId() {
         return id;
     }

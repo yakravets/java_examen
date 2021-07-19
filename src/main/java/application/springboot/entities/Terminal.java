@@ -18,11 +18,6 @@ public class Terminal {
     public Terminal() {
     }
 
-    public Terminal(String name, Airport airport) {
-        this.name = name;
-        this.airport = airport;
-    }
-
     public int getId() {
         return id;
     }

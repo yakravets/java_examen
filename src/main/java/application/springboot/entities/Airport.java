@@ -25,19 +25,8 @@ public class Airport {
     @OneToMany(mappedBy = "airport", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Terminal> terminals;
 
-    public Airport(String name, String icaoCode, String iataCode, String status, double longitude, double latitude, Country country) {
-        this.name = name;
-        this.icaoCode = icaoCode;
-        this.iataCode = iataCode;
-        this.status = status;
-        this.longitude = longitude;
-        this.latitude = latitude;
-        this.country = country;
-        terminals = new ArrayList<>();
-    }
-
     public Airport() {
-
+        terminals = new ArrayList<>();
     }
 
     public int getId() {

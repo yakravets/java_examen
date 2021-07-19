@@ -20,13 +20,9 @@ public class Country {
     @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Airport> airports;
 
-    public Country(String name, String shortName) {
-        this.name = name;
-        this.shortName = shortName;
-        cities = new ArrayList<>();
-    }
-
     public Country() {
+        cities = new ArrayList<>();
+        airports = new ArrayList<>();
     }
 
     public int getId() {

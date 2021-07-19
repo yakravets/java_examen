@@ -18,21 +18,6 @@ public class UserRole {
     public UserRole() {
     }
 
-    public UserRole(int id, String name, Access access, String table, User user) {
-        this.id = id;
-        this.name = name;
-        this.access = access;
-        this.table = table;
-        this.user = user;
-    }
-
-    public UserRole(String name, Access access, String table, User user) {
-        this.name = name;
-        this.access = access;
-        this.table = table;
-        this.user = user;
-    }
-
     public int getId() {
         return id;
     }

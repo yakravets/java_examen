@@ -70,15 +70,10 @@ public class TestAirport {
         airport.setTerminals(terminals);
         Assert.assertEquals(0, airport.getTerminals().size());
 
-        Terminal terminal = new Terminal("A", airport);
+        Terminal terminal = new Terminal();
+        terminal.setName("A");
+        terminal.setAirport(airport);
         terminals.add(terminal);
         Assert.assertEquals(1, airport.getTerminals().size());
-    }
-
-    @Test
-    public void TestConstructorWithParameters() {
-        Country country = new Country();
-        Airport airport = new Airport("TEST", "ICAO", "IATA", "OK", 1.5, 2.5, country);
-        Assert.assertNotNull(airport);
     }
 }

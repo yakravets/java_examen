@@ -28,11 +28,4 @@ public class TestTerminal {
         terminal.setAirport(airport);
         Assert.assertNotNull(terminal.getAirport());
     }
-
-    @Test
-    public void TestConstructorWithParameters() {
-        Airport airport = new Airport();
-        Terminal terminal = new Terminal("Test", airport);
-        Assert.assertNotNull(terminal);
-    }
 }
