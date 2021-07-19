@@ -15,9 +15,6 @@ public class City {
     private Country country;
     private String name;
 
-    public City() {
-    }
-
     public int getId() {
         return id;
     }

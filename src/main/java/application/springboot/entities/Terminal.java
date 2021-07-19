@@ -15,9 +15,6 @@ public class Terminal {
     @JoinColumn(name = "airport_id")
     private Airport airport;
 
-    public Terminal() {
-    }
-
     public int getId() {
         return id;
     }

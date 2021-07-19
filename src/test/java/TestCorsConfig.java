@@ -6,7 +6,7 @@ import org.springframework.web.filter.CorsFilter;
 public class TestCorsConfig {
 
     @Test
-    void GetSettings() {
+    public void GetSettings() {
         CorsConfig corsConfig = new CorsConfig();
         Assert.assertNotNull(corsConfig);
 

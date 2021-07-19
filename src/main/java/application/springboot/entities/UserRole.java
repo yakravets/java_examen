@@ -15,9 +15,6 @@ public class UserRole {
     @ManyToOne
     private User user;
 
-    public UserRole() {
-    }
-
     public int getId() {
         return id;
     }

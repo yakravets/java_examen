@@ -24,9 +24,6 @@ public class User {
     @ColumnDefault(value="false")
     private boolean blocked;
 
-    public User() {
-    }
-
     public int getId() {
         return id;
     }
