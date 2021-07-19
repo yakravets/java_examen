@@ -1,5 +1,4 @@
-package application.springboot.externalservices;
-
+import application.springboot.externalservices.SheduleRepositoryAPI;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,5 +1,4 @@
-package application.springboot.configure;
-
+import configure.CorsConfig;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.web.filter.CorsFilter;

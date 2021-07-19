@@ -1,5 +1,3 @@
-package entities;
-
 import application.springboot.entities.Airport;
 import application.springboot.entities.Terminal;
 import org.junit.Assert;

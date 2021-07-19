@@ -1,5 +1,3 @@
-package applicationTest;
-
 import org.hibernate.cfg.Configuration;
 import org.junit.Assert;
 import org.junit.Test;
