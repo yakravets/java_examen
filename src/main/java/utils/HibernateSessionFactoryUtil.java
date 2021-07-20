@@ -1,9 +1,9 @@
 package utils;
 
-import models.Airport;
-import models.City;
-import models.Country;
-import models.Terminal;
+import application.springboot.entities.Airport;
+import application.springboot.entities.City;
+import application.springboot.entities.Country;
+import application.springboot.entities.Terminal;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
