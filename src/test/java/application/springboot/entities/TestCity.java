@@ -1,3 +1,5 @@
+package application.springboot.entities;
+
 import application.springboot.entities.City;
 import application.springboot.entities.Country;
 import org.junit.Assert;

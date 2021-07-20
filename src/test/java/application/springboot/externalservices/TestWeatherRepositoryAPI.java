@@ -1,3 +1,5 @@
+package application.springboot.externalservices;
+
 import application.springboot.externalservices.WeatherRepositoryAPI;
 import org.junit.Assert;
 import org.junit.Test;

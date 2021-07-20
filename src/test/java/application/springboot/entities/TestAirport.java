@@ -1,3 +1,5 @@
+package application.springboot.entities;
+
 import application.springboot.entities.Airport;
 import application.springboot.entities.Country;
 import application.springboot.entities.Terminal;

@@ -1,3 +1,5 @@
+package configure;
+
 import configure.CorsConfig;
 import org.junit.Assert;
 import org.junit.Test;
