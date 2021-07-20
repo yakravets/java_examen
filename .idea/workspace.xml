@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ed7e8a6-745d-431c-bef2-b6f56dbf720a" name="Default Changelist" comment="add test coverage CORS config file">
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/springboot/controllers/api/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/application/springboot/controllers/api/RegisterController.java" afterDir="false" />
-    </list>
+    <list default="true" id="f6eb3b9f-ff7a-45e6-ac25-7f012c125f16" name="Default Changelist" comment="add test coverage User" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +29,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1vIxTV5VRgnRxbKsoGXujYFB3TI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -89,19 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <selectedOptions>
-        <option name="module.classpath" />
-      </selectedOptions>
-      <extension name="coverage" runner="jacoco" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="java in examen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <configuration name="java in examen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="examen" />
       <selectedOptions>
         <option name="module.classpath" />
