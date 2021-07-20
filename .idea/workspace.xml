@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6eb3b9f-ff7a-45e6-ac25-7f012c125f16" name="Default Changelist" comment="add test coverage User" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="migrate_to_spring_boot" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1vIxTV5VRgnRxbKsoGXujYFB3TI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yakravets\Desktop\repo\java_examen\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="configure" />
+      <recent name="" />
+      <recent name="application.springboot" />
+      <recent name="application.springboot.externalservices" />
+      <recent name="application.springboot.entities" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestUser">
+    <configuration name="All tests" type="JUnit" factoryName="JUnit">
+      <module name="examen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.TestRegisterClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="examen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mainTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mainTest" />
+      <option name="MAIN_CLASS_NAME" value="mainTest.Main" />
+      <option name="METHOD_NAME" value="TestRegisterClasses" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="examen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.springboot.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="application.springboot.entities" />
+      <option name="MAIN_CLASS_NAME" value="application.springboot.entities.TestAccess" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAircraftRepositoryAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="examen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.springboot.externalservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="application.springboot.externalservices" />
+      <option name="MAIN_CLASS_NAME" value="application.springboot.externalservices.TestAircraftRepositoryAPI" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestApplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="examen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="application.springboot" />
+      <option name="MAIN_CLASS_NAME" value="application.springboot.TestApplication" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="examen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.springboot.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="application.springboot.entities" />
+      <option name="MAIN_CLASS_NAME" value="application.springboot.entities.TestUser" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All tests" />
+      <item itemvalue="JUnit.TestApplication" />
+      <item itemvalue="JUnit.TestAircraftRepositoryAPI" />
+      <item itemvalue="JUnit.TestAccess" />
+      <item itemvalue="JUnit.TestUser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestUser" />
+        <item itemvalue="JUnit.TestAccess" />
+        <item itemvalue="JUnit.TestApplication" />
+        <item itemvalue="JUnit.TestAircraftRepositoryAPI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6eb3b9f-ff7a-45e6-ac25-7f012c125f16" name="Default Changelist" comment="" />
+      <created>1626263417579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626263417579</updated>
+    </task>
+    <task id="LOCAL-00001" summary="reorganize project">
+      <created>1626263559541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626263559541</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix sonar issues in model Airport">
+      <created>1626264141724</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626264141724</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add support jacoco and junit">
+      <created>1626268101226</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626268101226</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update test file">
+      <created>1626268783896</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626268783896</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update model Country and test file Country">
+      <created>1626269382720</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626269382720</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update model Country and test file Country">
+      <created>1626269805082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626269805082</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update model Country and test file Country">
+      <created>1626270078827</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626270078827</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update readme.md and pom.xml">
+      <created>1626275496300</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626275496300</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add tests models class">
+      <created>1626299169130</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626299169130</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add tests models class">
+      <created>1626299242987</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626299242987</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update tests models class">
+      <created>1626300125321</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626300125321</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update tests models class">
+      <created>1626300578703</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626300578703</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add tests to class FlightstatsAPI.java">
+      <created>1626301067489</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626301067489</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add tests to classes API">
+      <created>1626301572895</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626301572895</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update tests">
+      <created>1626301874016</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626301874016</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add code coverage">
+      <created>1626334970081</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1626334970081</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add code coverage">
+      <created>1626335110863</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1626335110863</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add code coverage">
+      <created>1626336031601</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1626336031601</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update file name">
+      <created>1626337509482</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1626337509482</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update file name">
+      <created>1626340853859</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1626340853859</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update main.java and pom.xml">
+      <created>1626426287480</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1626426287480</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update main.java and pom.xml">
+      <created>1626426475665</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1626426475665</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update ctors classes and fix tests">
+      <created>1626702910968</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1626702910968</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update test directory">
+      <created>1626703253972</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1626703253972</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update pom.xml">
+      <created>1626704804412</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1626704804412</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update tests">
+      <created>1626705871374</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1626705871374</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update tests">
+      <created>1626705912926</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1626705912926</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix bugs in pom.xml on coverage code">
+      <created>1626708330576</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1626708330576</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix bugs in pom.xml on coverage code">
+      <created>1626723306937</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1626723306937</updated>
+    </task>
+    <task id="LOCAL-00030" summary="reorganize file tests">
+      <created>1626773904365</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1626773904365</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update pom.xml and port DB">
+      <created>1626777517576</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1626777517576</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update pom.xml and port DB">
+      <created>1626781599641</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1626781599641</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update pom.xml and port DB">
+      <created>1626781715525</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1626781715525</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update pom.xml and port DB">
+      <created>1626781943880</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1626781943880</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update pom.xml and port DB">
+      <created>1626782122381</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1626782122381</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update pom.xml and port DB">
+      <created>1626782535996</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1626782535996</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update pom.xml">
+      <created>1626783212912</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1626783212912</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update pom.xml">
+      <created>1626783454140</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1626783454140</updated>
+    </task>
+    <task id="LOCAL-00039" summary="update pom.xml">
+      <created>1626790062533</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1626790062533</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update pom.xml">
+      <created>1626792522709</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1626792522709</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update pom.xml">
+      <created>1626792689116</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1626792689116</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add test coverage User">
+      <created>1626793489084</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1626793489084</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="reorganize project" />
+    <MESSAGE value="fix sonar issues in model Airport" />
+    <MESSAGE value="add support jacoco and junit" />
+    <MESSAGE value="update test file" />
+    <MESSAGE value="update model Country and test file Country" />
+    <MESSAGE value="update readme.md and pom.xml" />
+    <MESSAGE value="add tests models class" />
+    <MESSAGE value="update tests models class" />
+    <MESSAGE value="add tests to class FlightstatsAPI.java" />
+    <MESSAGE value="add tests to classes API" />
+    <MESSAGE value="add code coverage" />
+    <MESSAGE value="update file name" />
+    <MESSAGE value="update main.java and pom.xml" />
+    <MESSAGE value="update ctors classes and fix tests" />
+    <MESSAGE value="update test directory" />
+    <MESSAGE value="update tests" />
+    <MESSAGE value="fix bugs in pom.xml on coverage code" />
+    <MESSAGE value="reorganize file tests" />
+    <MESSAGE value="update pom.xml and port DB" />
+    <MESSAGE value="update pom.xml" />
+    <MESSAGE value="add test coverage User" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test coverage User" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_examen$TestCity.ic" NAME="TestCity Coverage Results" MODIFIED="1626701381516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$TestAirport.ic" NAME="TestAirport Coverage Results" MODIFIED="1626701368578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$All_tests.ic" NAME="All tests Coverage Results" MODIFIED="1626792086004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/java_examen$TestTermial.ic" NAME="TestTermial Coverage Results" MODIFIED="1626299757805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>jacoco.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$Main_TestRegisterClasses.ic" NAME="Main.TestRegisterClasses Coverage Results" MODIFIED="1626334302443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/java_examen$TestCountry_TestAirportsList.ic" NAME="TestCountry.TestAirportsList Coverage Results" MODIFIED="1626701703494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$TestCountry.ic" NAME="TestCountry Coverage Results" MODIFIED="1626701715833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$TestUser.ic" NAME="TestUser Coverage Results" MODIFIED="1626793455226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.springboot.entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$Main_TestRegisterClasses__1_.ic" NAME="Main.TestRegisterClasses (1) Coverage Results" MODIFIED="1626334942738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>MainTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$TestCountry_TestCitiesList.ic" NAME="TestCountry.TestCitiesList Coverage Results" MODIFIED="1626702843948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$TestAircraftRepositoryAPI.ic" NAME="TestAircraftRepositoryAPI Coverage Results" MODIFIED="1626776245659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.springboot.externalservices.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$TestApplication.ic" NAME="TestApplication Coverage Results" MODIFIED="1626791513140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.springboot.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_examen$TestAccess.ic" NAME="TestAccess Coverage Results" MODIFIED="1626793291149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.springboot.entities.*</FILTER>
+    </SUITE>
+  </component>
+</project>
