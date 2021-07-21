@@ -1,37 +1,70 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import 'antd/dist/antd.css';
 import './App.css';
+import { Menu } from 'antd';
+import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 
-export default function App() {
-  return (
-    <Router>
-      <div class="scrollmenu">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/trips">Trips</Link>
-            </li>
-            <li>
-              <Link to="/airports">Airports</Link>
-            </li>
-            <li>
-              <Link to="/aircraft">Aircraft</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav> 
-      </div>       
-      <Switch>
+import { PageHeader } from 'antd';
+
+import { Input, Space } from 'antd';
+import { AudioOutlined } from '@ant-design/icons';
+
+import { DatePicker } from 'antd';
+
+import { Button } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
+
+const { Search } = Input;
+
+const suffix = (
+  <AudioOutlined
+    style={{
+      fontSize: 16,
+      color: '#1890ff',
+    }}
+  />
+);
+
+const onSearch = value => console.log(value);
+
+export default class App extends React.Component {
+  state = {
+    current: 'mail',
+  };
+
+  handleClick = e => {
+    console.log('click ', e);
+    this.setState({ current: e.key });
+  };
+
+  render() {
+    const { current } = this.state;
+    return (
+      <Router>
+        <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
+          <Menu.Item key="home" icon={<MailOutlined />}>
+            <Link to="/">Home</Link>
+          </Menu.Item>
+          <Menu.Item key="trips" icon={<AppstoreOutlined />}>
+            <Link to="/trips">Trips</Link>
+          </Menu.Item>
+          <Menu.Item key="airports" icon={<AppstoreOutlined />}>
+            <Link to="/airports">Airports</Link>
+          </Menu.Item>
+          <Menu.Item key="aircraft" icon={<AppstoreOutlined />}>
+            <Link to="/aircraft">Aircraft</Link>
+          </Menu.Item>
+          <Menu.Item key="about">
+            <Link to="/about">About</Link>
+          </Menu.Item>
+        </Menu>
+        <Switch>
         <Route path="/about">
           <About />
         </Route>
@@ -47,27 +80,85 @@ export default function App() {
         <Route path="/">
           <Home />
         </Route>
-      </Switch>    
-    </Router>
-  );
+      </Switch>
+      </Router>
+    );
+  }
 }
 
+function onChange(date, dateString) {
+  console.log(date, dateString);
+}
+
+
+
 function Home() {
-  return <h2>Home</h2>;
+  return (
+  <>
+  <div className="content">
+    <Space>
+
+      <Space>
+        <Search placeholder="From" onSearch={onSearch} style={{ width: 200 }} />
+        <DatePicker onChange={onChange} />
+      </Space>
+      
+      <Space>
+        <Search placeholder="To" onSearch={onSearch} style={{ width: 200 }} />
+        <DatePicker onChange={onChange} />
+      </Space>
+      <Button type="primary" icon={<SearchOutlined />} success>
+        Search
+      </Button>
+    </Space>
+  </div>
+  </>);
 }
 
 function About() {
-  return <h2>About</h2>;
+  return (
+    <>
+      <PageHeader
+        className="site-page-header"
+        onBack={() => window.history.back()}
+        title="About"
+        subTitle="Non comercial project. With love to you."
+      />
+    </>);
 }
 
 function Trips() {
-  return <h2>Trips</h2>;
+  return (
+    <>
+      <PageHeader
+        className="site-page-header"
+        onBack={() => window.history.back()}
+        title="Trips"
+        subTitle="List all trips"
+      />
+    </>);
 }
 
 function Airports() {
-  return <h2>Airports</h2>;
+  return (
+    <>
+      <PageHeader
+        className="site-page-header"
+        onBack={() => window.history.back()}
+        title="Airports"
+        subTitle="List all airports"
+      />
+    </>);
 }
 
 function Aircraft() {
-  return <h2>Aircraft</h2>;
+  return (
+  <>
+    <PageHeader
+      className="site-page-header"
+      onBack={() => window.history.back()}
+      title="Aircraft"
+      subTitle="List all aircrafts"
+    />
+  </>);
 }
