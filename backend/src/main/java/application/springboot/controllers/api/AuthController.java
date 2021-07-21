@@ -16,12 +16,12 @@ public class AuthController {
     }
 
     @GetMapping("/login")
-    public String Login(){
+    public String login(){
         return "login";
     }
 
     @GetMapping("/logout")
-    public String Logout(){
+    public String logout(){
         return "logout";
     }
 }

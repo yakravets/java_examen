@@ -1,10 +1,7 @@
 package application.springboot.loader;
 
-import application.springboot.entities.Access;
 import application.springboot.entities.User;
-import application.springboot.entities.UserRole;
 import application.springboot.repositories.UserRepository;
-import application.springboot.repositories.UserRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,12 +9,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class DatabaseLoader implements CommandLineRunner {
     private final UserRepository userRepository;
-    private final UserRoleRepository userRoleRepository;
 
     @Autowired
-    public DatabaseLoader(UserRepository userRepository, UserRoleRepository userRoleRepository) {
+    public DatabaseLoader(UserRepository userRepository) {
         this.userRepository = userRepository;
-        this.userRoleRepository = userRoleRepository;
     }
 
     @Override
@@ -34,15 +29,9 @@ public class DatabaseLoader implements CommandLineRunner {
         {
             this.userRepository.save(admin);
         }
+    }
 
-        if(this.userRoleRepository.count()==0)
-        {
-            UserRole roleAdmin = new UserRole();
-            roleAdmin.setName("Administrator");
-            roleAdmin.setAccess(Access.ALL);
-            roleAdmin.setUser(admin);
-            roleAdmin.setTable("*");
-            this.userRoleRepository.save(roleAdmin);
-        }
+    public UserRepository getUserRepository() {
+        return userRepository;
     }
 }
