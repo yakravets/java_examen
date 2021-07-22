@@ -8,7 +8,11 @@ import {
 import 'antd/dist/antd.css';
 import './App.css';
 import { Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
+import { MailOutlined, AppstoreOutlined } from '@ant-design/icons';
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import { IoAirplaneSharp } from "react-icons/io5";
+import { MdAirlineSeatReclineExtra } from "react-icons/md";
+import { GiAirplaneDeparture } from "react-icons/gi";
 
 import { PageHeader } from 'antd';
 
@@ -55,16 +59,16 @@ export default class App extends React.Component {
           <Menu.Item key="home" icon={<MailOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="trips" icon={<AppstoreOutlined />}>
+          <Menu.Item key="trips" icon={<GiAirplaneDeparture />}>
             <Link to="/trips">Trips</Link>
           </Menu.Item>
-          <Menu.Item key="airports" icon={<AppstoreOutlined />}>
+          <Menu.Item key="airports" icon={<MdAirlineSeatReclineExtra />}>
             <Link to="/airports">Airports</Link>
           </Menu.Item>
-          <Menu.Item key="aircraft" icon={<AppstoreOutlined />}>
+          <Menu.Item key="aircraft" icon={<IoAirplaneSharp />}>
             <Link to="/aircraft">Aircraft</Link>
           </Menu.Item>
-          <Menu.Item key="about">
+          <Menu.Item key="about" icon={<AiOutlineInfoCircle/>}>
             <Link to="/about">About</Link>
           </Menu.Item>
         </Menu>
