@@ -20,6 +20,10 @@ import { DatePicker } from 'antd';
 import { Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 
+import { Divider } from 'antd';
+import { Layout } from 'antd';
+import PageCarousel from './PageCarousel/PageCarousel';
+
 const { Search } = Input;
 
 const suffix = (
@@ -90,27 +94,33 @@ function onChange(date, dateString) {
   console.log(date, dateString);
 }
 
-
-
 function Home() {
   return (
   <>
   <div className="content">
-    <Space>
-
-      <Space>
-        <Search placeholder="From" onSearch={onSearch} style={{ width: 200 }} />
-        <DatePicker onChange={onChange} />
-      </Space>
-      
-      <Space>
-        <Search placeholder="To" onSearch={onSearch} style={{ width: 200 }} />
-        <DatePicker onChange={onChange} />
-      </Space>
-      <Button type="primary" icon={<SearchOutlined />} success>
-        Search
-      </Button>
-    </Space>
+    
+      {/* <PageCarousel className="pagecarousel"/> */}
+    <Layout>
+      <Space className="space_main">
+        <Layout direction="vertical">
+          <Divider orientation="left">From:</Divider>
+          <Space>
+            <Search size="large" placeholder="From" onSearch={onSearch} style={{ width: 200 }} />
+            <DatePicker size="large" onChange={onChange} />
+          </Space>
+        </Layout>
+        <Layout direction="vertical">
+          <Divider orientation="left">To:</Divider>
+          <Space>
+            <Search size="large" placeholder="To" onSearch={onSearch} style={{ width: 200 }} />
+            <DatePicker size="large" onChange={onChange} />
+            <Button  size="large" type="primary" icon={<SearchOutlined />} success>
+              Search
+            </Button>
+          </Space>
+        </Layout>        
+      </Space>      
+    </Layout>      
   </div>
   </>);
 }
