@@ -10,9 +10,9 @@ import './App.css';
 import { Menu } from 'antd';
 import { MailOutlined, AppstoreOutlined } from '@ant-design/icons';
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import { IoAirplaneSharp } from "react-icons/io5";
+import { GiCommercialAirplane } from "react-icons/gi";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
-import { GiAirplaneDeparture } from "react-icons/gi";
+import { FaRegListAlt } from "react-icons/fa";
 
 import { PageHeader } from 'antd';
 
@@ -23,6 +23,7 @@ import { DatePicker } from 'antd';
 
 import { Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
+import { GrMenu } from 'react-icons/gr';
 
 import { Divider } from 'antd';
 import { Layout } from 'antd';
@@ -56,16 +57,16 @@ export default class App extends React.Component {
     return (
       <Router>
         <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
-          <Menu.Item key="home" icon={<MailOutlined />}>
+          <Menu.Item key="home" icon={<GrMenu />}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="trips" icon={<GiAirplaneDeparture />}>
+          <Menu.Item key="trips" icon={<FaRegListAlt />}>
             <Link to="/trips">Trips</Link>
           </Menu.Item>
           <Menu.Item key="airports" icon={<MdAirlineSeatReclineExtra />}>
             <Link to="/airports">Airports</Link>
           </Menu.Item>
-          <Menu.Item key="aircraft" icon={<IoAirplaneSharp />}>
+          <Menu.Item key="aircraft" icon={<GiCommercialAirplane />}>
             <Link to="/aircraft">Aircraft</Link>
           </Menu.Item>
           <Menu.Item key="about" icon={<AiOutlineInfoCircle/>}>
