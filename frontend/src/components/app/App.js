@@ -7,29 +7,20 @@ import {
 } from "react-router-dom";
 import 'antd/dist/antd.css';
 import './App.css';
+
+import Home from './Home';
+import About from './About';
+import ListTrips from './ListTrips';
+import ListAircraft from './ListAircraft';
+import ListAirports from './ListAirports';
+
 import { Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined } from '@ant-design/icons';
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
 import { FaRegListAlt } from "react-icons/fa";
-
-import { PageHeader } from 'antd';
-
-import { Input, Space } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
-
-import { DatePicker } from 'antd';
-
-import { Button } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
 import { GrMenu } from 'react-icons/gr';
-
-import { Divider } from 'antd';
-import { Layout } from 'antd';
-import PageCarousel from './PageCarousel/PageCarousel';
-
-const { Search } = Input;
 
 const suffix = (
   <AudioOutlined
@@ -40,15 +31,12 @@ const suffix = (
   />
 );
 
-const onSearch = value => console.log(value);
-
 export default class App extends React.Component {
   state = {
     current: 'mail',
   };
 
   handleClick = e => {
-    console.log('click ', e);
     this.setState({ current: e.key });
   };
 
@@ -78,13 +66,13 @@ export default class App extends React.Component {
           <About />
         </Route>
         <Route path="/trips">
-          <Trips />
+          <ListTrips />
         </Route>
         <Route path="/airports">
-          <Airports/>
+          <ListAirports/>
         </Route>
         <Route path="/aircraft">
-          <Aircraft/>
+          <ListAircraft/>
         </Route>
         <Route path="/">
           <Home />
@@ -93,87 +81,4 @@ export default class App extends React.Component {
       </Router>
     );
   }
-}
-
-function onChange(date, dateString) {
-  console.log(date, dateString);
-}
-
-function Home() {
-  return (
-  <>
-  <div className="content">
-    
-      {/* <PageCarousel className="pagecarousel"/> */}
-    <Layout>
-      <Space className="space_main">
-        <Layout direction="vertical">
-          <Divider orientation="left">From:</Divider>
-          <Space>
-            <Search size="large" placeholder="From" onSearch={onSearch} style={{ width: 200 }} />
-            <DatePicker size="large" onChange={onChange} />
-          </Space>
-        </Layout>
-        <Layout direction="vertical">
-          <Divider orientation="left">To:</Divider>
-          <Space>
-            <Search size="large" placeholder="To" onSearch={onSearch} style={{ width: 200 }} />
-            <DatePicker size="large" onChange={onChange} />
-            <Button  size="large" type="primary" icon={<SearchOutlined />} success>
-              Search
-            </Button>
-          </Space>
-        </Layout>        
-      </Space>      
-    </Layout>      
-  </div>
-  </>);
-}
-
-function About() {
-  return (
-    <>
-      <PageHeader
-        className="site-page-header"
-        onBack={() => window.history.back()}
-        title="About"
-        subTitle="Non comercial project. With love to you."
-      />
-    </>);
-}
-
-function Trips() {
-  return (
-    <>
-      <PageHeader
-        className="site-page-header"
-        onBack={() => window.history.back()}
-        title="Trips"
-        subTitle="List all trips"
-      />
-    </>);
-}
-
-function Airports() {
-  return (
-    <>
-      <PageHeader
-        className="site-page-header"
-        onBack={() => window.history.back()}
-        title="Airports"
-        subTitle="List all airports"
-      />
-    </>);
-}
-
-function Aircraft() {
-  return (
-  <>
-    <PageHeader
-      className="site-page-header"
-      onBack={() => window.history.back()}
-      title="Aircraft"
-      subTitle="List all aircrafts"
-    />
-  </>);
 }
