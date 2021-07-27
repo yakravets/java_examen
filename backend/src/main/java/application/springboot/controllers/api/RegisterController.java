@@ -4,6 +4,7 @@ import application.springboot.repositories.UserRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/v1/api")
 public class RegisterController {
 
     private final UserRepository userRepository;
