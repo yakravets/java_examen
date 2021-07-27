@@ -6,8 +6,8 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  build:
-    name: Build
+  build-backend:
+    name: Build backend
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -34,3 +34,21 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -f ./backend/pom.xml
+  build-frontend:
+    name: Build-frontend  
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
+      - name: Install dependencies
+          run: npm install
+      - name: Install Jest globally
+          run: sudo npm install -g jest
+      - name: Run Tests
+          run: npm run test
+      - name: SonarCloud Scan
+          uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
