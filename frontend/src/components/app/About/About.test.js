@@ -11,7 +11,7 @@ import toJson from "enzyme-to-json";
 it("renders correctly", () => {
     const tree = shallow(<About />);
     expect(toJson(tree)).toMatchSnapshot();
-  });
+});
 
 it("renders without crashing", () => {
     shallow(<About />);
