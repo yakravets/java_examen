@@ -48,9 +48,16 @@
         "jest-sonar-reporter": "^2.0.0",
         "react-test-renderer": "^17.0.2"
     },
-    "jestSonar": {
-      "reportPath": "reports",
-      "reportFile": "test-report.xml",
-      "indent": 4
+    "jest": {
+        "collectCoverageFrom": [
+            "src/**/*.{js,jsx,ts,tsx}",
+            "!src/**/*.d.ts",
+            "!src/**/__stories__/",
+            "!<rootDir>/node_modules/"
+        ],
+        "coverageReporters": [
+            "lcov"
+        ]
+        
     }
 }
