@@ -1,6 +1,6 @@
 # java_examen
 
-Sonarqube statistics:
+Sonarqube statistics backend:
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=yakravets_java_examen&metric=alert_status)](https://sonarcloud.io/dashboard?id=yakravets_java_examen)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=yakravets_java_examen&metric=bugs)](https://sonarcloud.io/dashboard?id=yakravets_java_examen)
