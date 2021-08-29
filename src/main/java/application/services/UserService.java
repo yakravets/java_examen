@@ -5,7 +5,6 @@ import application.entities.UserRole;
 import application.repositories.UserRepository;
 import application.repositories.UserRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -32,10 +31,13 @@ public class UserService {
 
     public User findByEmailAndPassword(String email, String password){
         User user = findByEmail(email);
-        if(user != null){
-           if(passwordEncoder.matches(password, user.getPassword())){
-               return  user;
-           }
+
+        if(user == null){
+            return null;
+        }
+
+        if(passwordEncoder.matches(password, user.getPassword())){
+            return  user;
         }
 
         return  null;

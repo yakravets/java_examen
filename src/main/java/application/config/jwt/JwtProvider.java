@@ -1,6 +1,7 @@
 package application.config.jwt;
 
 import io.jsonwebtoken.*;
+import lombok.Setter;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -13,11 +14,17 @@ import java.util.Date;
 @Log
 public class JwtProvider {
 
+    private static final int DAYS_EXPIRATION_TOKEN = 15;
+
     @Value("$(jwt.secret)")
+    @Setter
     private String jwtSecret;
 
     public String generateToken(String login) {
-        Date date = Date.from(LocalDate.now().plusDays(15).atStartOfDay(ZoneId.systemDefault()).toInstant());
+        Date date = Date.from(LocalDate.now()
+                .plusDays(DAYS_EXPIRATION_TOKEN)
+                .atStartOfDay(ZoneId.systemDefault())
+                .toInstant());
         return Jwts.builder()
                 .setSubject(login)
                 .setExpiration(date)
