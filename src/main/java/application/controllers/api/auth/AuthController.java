@@ -5,6 +5,7 @@ import application.data.AuthResponse;
 import application.entities.User;
 import application.services.UserService;
 import application.config.jwt.JwtProvider;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,6 +31,7 @@ public class AuthController {
                 user.isEmailConfirmed());
     }
 
+    @SecurityRequirement(name = "authAPI")
     @PostMapping("/logout")
     public String logout(){
         return "logout";
