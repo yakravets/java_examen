@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TestUserService {
 
     @Test
-    public void TestService(){
+    void TestService(){
 
         UserService userService = new UserService();
         Assertions.assertNotNull(userService);
