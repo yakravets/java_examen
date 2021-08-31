@@ -1,15 +1,16 @@
 package application.controllers.api.auth;
 
-import application.data.AuthRequest;
-import application.data.AuthResponse;
+import application.data.*;
 import application.entities.User;
 import application.services.UserService;
 import application.config.jwt.JwtProvider;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/v1/api")
+@RequestMapping("/api/v1")
 public class AuthController {
 
     @Autowired
@@ -19,19 +20,50 @@ public class AuthController {
     private JwtProvider jwtProvider;
 
     @PostMapping("/login")
-    public AuthResponse login(@RequestBody AuthRequest request){
+    @Operation(summary = "Логін користувача")
+    public AuthLoginResponse login(@RequestBody AuthLoginRequest request){
         User user = userService.findByEmailAndPassword(request.getLogin(), request.getPassword());
+        if(user == null){
+            return new AuthLoginResponse(
+                false,
+                null,
+                "",
+                "",
+                "",
+                false,
+                "User not found"
+            );
+        }
+
         String token = jwtProvider.generateToken(user.getEmail());
-        return new AuthResponse(
+        return new AuthLoginResponse(
+                true,
                 token,
                 user.getFirstName(),
                 user.getLastName(),
                 user.getUserRole().toString(),
-                user.isEmailConfirmed());
+                user.isEmailConfirmed(),
+                null);
+    }
+
+    @PostMapping("/refreshtoken")
+    @SecurityRequirement(name = "authAPI")
+    @Operation(summary = "Оновлення строку дії наявного токену у користувача")
+    public String refreshToken(@RequestHeader AuthRefreshValidateTokenHeaderRequest header, @RequestBody AuthRefreshValidateTokenBodyRequest body){
+        return "Refresh";
     }
 
     @PostMapping("/logout")
-    public String logout(){
+    @SecurityRequirement(name = "authAPI")
+    @Operation(summary = "Вихід з системи")
+    public String logout(@RequestHeader AuthLogoutHeaderRequest header){
         return "logout";
+    }
+
+    @PostMapping("/validateToken")
+    @SecurityRequirement(name = "authAPI")
+    @Operation(summary = "Валідація наявного токену у користувача")
+    public String validateToken(@RequestHeader AuthRefreshValidateTokenHeaderRequest header, @RequestBody AuthRefreshValidateTokenBodyRequest body){
+        return "Refresh";
     }
 }

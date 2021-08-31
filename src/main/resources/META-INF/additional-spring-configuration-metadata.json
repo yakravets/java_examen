@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "springdoc.api-docs.enabled",
+      "type": "java.lang.String",
+      "description": "Description for springdoc.api-docs.enabled."
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Description for jwt.secret."
+    },
+    {
+      "name": "springdoc.api-docs.path",
+      "type": "java.lang.String",
+      "description": "Description for springdoc.api-docs.path."
+    },
+    {
+      "name": "springdoc.swagger-ui.path",
+      "type": "java.lang.String",
+      "description": "Description for springdoc.swagger-ui.path."
+    }
+  ] }
